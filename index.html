@@ -20,12 +20,14 @@
             <div class="logo">
                 <img src="./assets/img/logo.svg" alt="">
             </div>
-            <div class="topnav">
+
+            <div class="topnav" id="mytopnav">
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Our team</a></li>
                 <li><a href="#">Buyer's guides</a></li>
                 <li><a href="#">Categories</a></li>
+
                 <div class="topnav_btn">
                     <button class="btn_1">Buy template</button>
                     <button class="btn_2">
@@ -34,7 +36,10 @@
                     </button>
                 </div>
             </div>
+
+            <a href="javascript:void(0);" onclick="responce()" class="icon"><i class="fa fa-bars"></i></a>
         </div>
+
     </nav>
     <!-- ====end header==== -->
 
@@ -234,7 +239,7 @@
         </div>
         <div class="buy">
             <div class="buy_content">
-                <img src="./assets/img/img_8.svg" alt="">
+                <img class="by_img" src="./assets/img/img_8.svg" alt="">
                 <p>3 climbing accessories for the climber that<br> has everything</p>
                 <div class="buy_info">
                     <div class="sub_info">
@@ -246,7 +251,7 @@
                 </div>
             </div>
             <div class="buy_content">
-                <img src="./assets/img/img_9.svg" alt="">
+                <img class="by_img" src="./assets/img/img_9.svg" alt="">
                 <p>Biking accessories for the beaten path</p>
                 <div class="buy_info">
                     <div class="sub_info">
@@ -333,12 +338,41 @@
                 <p>© Outdoor Exploration, LLC. All rights reserved. Powered by Webflow.</p>
             </div>
             <div class="footer_icons">
-                <i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-facebook"></i><i
+                    class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i>
             </div>
         </div>
     </footer>
 
     <!-- ====end footer==== -->
+
+    <!-- script -->
+    <script>
+        function responce() {
+            let x = document.querySelector("#mytopnav")
+
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+
+            let y = document.querySelector(".navbar")
+            if (y.className === "navbar") {
+                y.className += " all"
+            }
+            else {
+                y.className = "navbar";
+            }
+            // let logo = document.querySelector(".logo")
+            // let img = document.querySelector("img")
+            // img.remove()
+            // logo.insertAdjacentHTML("beforeend", `<img src="./assets/img/logo_2.svg" />`)
+        }
+
+    </script>
+    <!-- script -->
 </body>
 
 </html>
