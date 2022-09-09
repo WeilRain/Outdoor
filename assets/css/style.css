@@ -1190,14 +1190,21 @@ input {
     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:366px) {
     input {
-        width: 320px;
+        width: 329px;
+        padding-left: 10px;
     }
 }
-@media screen and (max-width:350px) {
+@media screen and (max-width:354px) {
     input {
         width: 285px;
+        padding-left: 10px;
+    }
+    .btn_3{
+        right: 0;
+        left: 220px;
     }
 }
+
 /* footer */
