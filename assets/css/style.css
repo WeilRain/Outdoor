@@ -1035,7 +1035,7 @@ ul {
 }
 @media screen and (max-width:1100px){
     .subscribe_text{
-        padding-left: 60px;
+        margin-left: 60px;
     }
 }
 @media screen and (max-width:960px) {
@@ -1192,7 +1192,7 @@ input {
 
 @media screen and (max-width:366px) {
     input {
-        width: 329px;
+        width: 328px;
         padding-left: 10px;
     }
 }
